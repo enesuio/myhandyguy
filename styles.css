@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.services button {
+  all: unset; /* Resets all inherited styles */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.navbar-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-menu  ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CTA button styles */
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cta-btn .cta-text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.cta-btn:hover {
+  background-color: transparent;
+}
+
+.cta-btn:hover .cta-text {
+  color: #181717;
+}
+
+/* Mobile burger menu */
+.nav-toggle {
+  display: none;
+  width: 2rem;
+}
+
+.burger-line {
+  background-color: #000;
+  width: 100%;
+  height: 3px;
+}
+
+.burger-line:nth-child(2) {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url(./resources/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  color: #0a0e0f;
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to top, #811dbb 0%, #0ebc54 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text > p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Services section */
+
+.services {
+  width: 90%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.services p {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  color: #555;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: all 0.5;
+  position: relative;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:hover .card-bottom{
+  height: 100%;
+  transition: all 1.5s;
+}
+
+.card img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.card-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  padding-top: 3.5rem;
+  color: #eee;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Stupid and reckless coding */
+.one {
+  background-image: linear-gradient(to top, #d6a4da 0%, #9378b8 100%);
+}
+.two {
+  background-image: linear-gradient(to top, #f0b16d 0%, #dd6147 100%);
+}
+.three {
+  background-image: linear-gradient(to top, #6be0cb 0%, #57bdcb 100%);
+}
+.four {
+  background-image: linear-gradient(to top, #d6a4da 0%, #9378b8 100%);
+}
+.five {
+  background-image: linear-gradient(to top, #f0b16d 0%, #dd6147 100%);
+}
+.six {
+  background-image: linear-gradient(to top, #6be0cb 0%, #57bdcb 100%);
+}
+
+/* Please find a better solution to above ugh */
+
+.card-bottom h3 {
+  font-size: 1.8rem;
+}
+
+.card-bottom button {
+  position: absolute;
+  bottom: 2rem;
+}
+
+/* Service Card Divider */
+
+.service-card-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.service-card-divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.service-card-divider .shape-fill {
+  fill: #fff;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding: 4rem;
+  background: #141414;
+  color: #fff;
+}
+
+footer > .row {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+
+}
+
+footer input {
+  width: 65%;
+  height: 3rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+}
+
+.subs-text {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+footer button {
+  height: 3rem;
+  width: 150px;
+  border-radius: 9px;
+  margin-left: 1rem;
+  text-align: center;
+  background-color: #333;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+footer button:hover {
+  background-color: #eee;
+  color: #222;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footer-right h4 {
+  font-size: 1.5rem;
+}
+
+.footer-right a {
+  color: white;
+  display: block;
+  margin-top: 1.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+.divider-bar {
+  width: 90%;
+  height: 2px;
+  background-color: #eee;
+  margin: auto;
+}
+
+.footer-bottom {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-legal a {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+/* Experimental */
