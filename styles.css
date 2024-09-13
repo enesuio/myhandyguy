@@ -9,15 +9,8 @@ body {
   background-color: #ffffff;
 }
 
-.services button {
-  all: unset; /* Resets all inherited styles */
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: whitesmoke;
-  color: black;
-  cursor: pointer;
-  border: 2px solid red;
-  border-radius: 5px;
+img {
+  width: 100%;
 }
 
 nav {
@@ -110,7 +103,7 @@ nav {
   .nav-toggle {
     display: block;
   }
-
+  
   .navbar-menu {
     display: none;
   }
@@ -183,7 +176,7 @@ nav {
   border-radius: 30px;
   background: #fff;
   box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  -15px -15px 30px #ffffff;
   transition: all 0.5;
   position: relative;
   overflow: hidden;
@@ -219,6 +212,17 @@ nav {
   gap: 1rem;
 }
 
+.services button {
+  all: unset; /* Resets all inherited styles */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
 /* Stupid and reckless coding */
 .one {
   background-image: linear-gradient(to top, #d6a4da 0%, #9378b8 100%);
@@ -250,7 +254,7 @@ nav {
   bottom: 2rem;
 }
 
-/* Service Card Divider */
+ /* Service Card Divider */
 
 .service-card-divider {
   position: absolute;
@@ -270,6 +274,40 @@ nav {
 
 .service-card-divider .shape-fill {
   fill: #fff;
+}
+
+/* Testimonials Section */
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.col-tes {
+  width: 30%;
+}
+
+.col-tes img {
+  box-shadow: #444 10px 10px 20px;
+}
+
+.col-tes p:has(i) {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.col-tes p:nth-of-type(2) {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.col-tes p:last-of-type {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #777;
 }
 
 /* Footer */
