@@ -9,6 +9,10 @@ body {
   background-color: #ffffff;
 }
 
+button {
+  all: unset;
+}
+
 img {
   width: 100%;
 }
@@ -16,7 +20,7 @@ img {
 nav {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 10;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -279,9 +283,28 @@ nav {
 /* Testimonials Section */
 
 .testimonials {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.testimonials-wrap {
   display: flex;
-  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
+/*  */
+
+  min-width: 100%;
+  justify-content: center;
   gap: 4rem;
   padding: 4rem 0;
 }
@@ -310,6 +333,20 @@ nav {
   color: #777;
 }
 
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-slider i {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
 /* Footer */
 
 footer {
@@ -327,13 +364,18 @@ footer > .row {
 
 }
 
+footer form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0 0.5rem 0;
+}
+
 footer input {
   width: 65%;
   height: 3rem;
   padding-left: 1rem;
   font-weight: 500;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -348,9 +390,8 @@ footer input {
 
 footer button {
   height: 3rem;
-  width: 150px;
+  width: 25%;
   border-radius: 9px;
-  margin-left: 1rem;
   text-align: center;
   background-color: #333;
   border: 1px solid #fff;
