@@ -50,9 +50,32 @@ nav {
   list-style: none;
 }
 
-.navbar-menu  ul li a {
+.navbar-menu a {
   text-decoration: none;
   color: inherit;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 0.3rem;
+}
+
+.navbar-menu a::after {
+  content: ".";
+  position: absolute;
+  font-size: 3rem;
+  bottom: -50%;
+  left: 50%;
+  translate: -50%;
+  display: none;
+}
+
+.navbar-menu li:hover {
+  scale: 1.1;
+  transition: 200ms;
+}
+
+.navbar-menu a:hover::after {
+  display: block;
 }
 
 /* CTA button styles */
@@ -61,7 +84,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 20px 25px;
   gap: 15px;
   background-color: #181717;
   outline: 3px #181717 solid;
@@ -69,14 +92,14 @@ nav {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: 400ms;
+  transition: 300ms;
 }
 
 .cta-btn .cta-text {
   color: white;
   font-weight: 700;
-  font-size: 1em;
-  transition: 400ms;
+  font-size: 1.2rem;
+  transition: 300ms;
 }
 
 .cta-btn:hover {
@@ -118,31 +141,37 @@ nav {
 .hero {
   width: 100%;
   height: calc(100vh - 80px);
-  background: url(./resources/hero-bg.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  padding: 3rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .hero-text {
-  color: #0a0e0f;
+  position: absolute;
   width: 50%;
+  margin-left: 3rem;
+  color: #eee;
+
 }
 
 .hero-text h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
-  background: linear-gradient(to top, #811dbb 0%, #0ebc54 100%);
+  /* background: linear-gradient(to top, #c4754b 0%, #b361f1 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .hero-text > p {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
 }
 
 /* Services section */
