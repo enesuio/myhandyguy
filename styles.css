@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #dfdfdf;
 }
 
 button {
@@ -283,15 +283,21 @@ nav {
 /* Testimonials Section */
 
 .testimonials {
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   position: relative;
-  margin: 0 auto;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: #fff -15px -15px 10px 20px, #bebebe 15px 15px 30px ;
 }
 
 .testimonials-wrap {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  text-align: initial;
 }
 
 .testimonial {
@@ -337,7 +343,6 @@ nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
 }
 
 .testimonial-slider i {
@@ -402,6 +407,7 @@ footer button {
 footer button:hover {
   background-color: #eee;
   color: #222;
+  cursor: pointer;
 }
 
 .footer-right {
