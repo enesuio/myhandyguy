@@ -1,23 +1,43 @@
-const testimonialsWrap = document.querySelector('.testimonials-wrap');
-const testimonials = document.querySelectorAll('.testimonial');
-const prevButton = document.querySelector('.previous');
-const nextButton = document.querySelector('.next');
+// Mobile Menu 
 
-let currentIndex = 0;
+const mobileBtn = document.querySelector(".nav-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-function slideTestimonials() {
-  testimonialsWrap.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+console.log(mobileMenu)
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % testimonials.length;
-  console.log("nextButton");
-
-  slideTestimonials();
+mobileBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
 });
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-  console.log("previousButton");
-  slideTestimonials();
-});
+
+
+// Slider Testimonials
+  const swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+      rotate: 60,
+      stretch: 0,
+      depth: 0,
+      modifier: 1,
+      slideShadows: true,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });

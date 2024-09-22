@@ -9,11 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>LocalHandyMan</title>
   </head>
   <body>
     <nav>
+      <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="">Services</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Previous Projects</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+
       <div class="logo">
         <!-- <img src="resources/logo.jpg" alt="LocalHandyMan" /> -->
         <div class="logo-placeholder"><p>Logo</p></div>
@@ -21,26 +39,19 @@
 
       <div class="navbar-menu">
         <ul>
-          <li><a href="" class="navbar_menu_link">Services</a></li>
-          <li><a href="" class="navbar_menu_link">Pricing</a></li>
-          <li><a href="" class="navbar_menu_link">Previous Projects</a></li>
-          <li><a href="" class="navbar_menu_link">Testimonials</a></li>
-          <li><a href="" class="navbar_menu_link">About Us</a></li>
-          <li><a href="" class="navbar_menu_link">FAQ</a></li>
-          <li><a href="" class="navbar_menu_link">Contact</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Previous Projects</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </div>
 
-      <button class="cta-btn">
-        <i class="fas fa-chevron-right fa-beat cta-text"></i>
-        <p class="cta-text">Get a quote now</p>
-      </button>
-
-      <div class="nav-toggle">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-      </div>
+      <a class="cta-btn" href="quote.html">
+        <i class="fas fa-chevron-right fa-beat cta-text"></i>Get a quote now
+      </a>
     </nav>
 
     <!-- Hero Section -->
@@ -57,11 +68,16 @@
           High-quality handyman services for furniture assembly, TV mounting,
           and more.
         </p>
-        <button class="cta-btn">
-          <i class="fas fa-chevron-right fa-beat cta-text"></i>
-          <p class="cta-text">Get a quote today</p>
-        </button>
-        <button></button>
+        <div class="mobile-hero">
+          <p><i class="fas fa-circle-check"></i>Sameday Service</p>
+          <p><i class="fas fa-circle-check"></i>Fully Insured</p>
+          <p><i class="fas fa-circle-check"></i>Satisfaction Guarantee</p>
+        </div>
+        <a href="quote.html">
+          <a class="cta-btn" href="quote.html">
+            <i class="fas fa-chevron-right fa-beat cta-text"></i>Get a quote now
+          </a>
+        </a>
       </div>
     </div>
     <div class="hero-bottom">
@@ -86,83 +102,48 @@
     <!-- Services Section -->
 
     <div class="services">
-      <h2>How can we help?</h2>
-      <p>
-        We can help with any of your home's needs. Can't find what you are
-        looking for? Please give us a call and we will be happy to help you out!
-      </p>
-      <div class="services-wrapper">
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Furniture Assembly</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Wall Mounting</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Furniture Assembly</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
+      <h2>
+        Whatever you need,<br />
+        we have it
+      </h2>
+      <div class="service-card">
+        <i class="fas fa-couch"></i>
+        <h3>Furniture Assembly</h3>
+        <p>Ikea, Tables, Bedframes, Shelving, Playgrounds</p>
       </div>
-      <div class="services-wrapper">
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Furniture Assembly</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Wall Mounting</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
-        <div class="service-card">
-          <img src="resources/service-card-assembly.png" alt="" />
-          <h3>Furniture Assembly</h3>
-          <p>
-            We can help you assemble any kind of furniture from IKEA to Amazon
-          </p>
-          <button>
-            Get help now <i class="fas fa-chevron-right fa-beat"></i>
-          </button>
-        </div>
+      <div class="service-card">
+        <i class="fas fa-tv"></i>
+        <h3>Wall Mounting</h3>
+        <p>TV Wall Mount, Shelving, Blackboard, Cabinets, Mirrors</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-house-circle-check"></i>
+        <h3>General Maintenance</h3>
+        <p>Drywall repair, Painting, Touch ups, Baseboard, Caulking</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-couch"></i>
+        <h3>Furniture Assembly</h3>
+        <p>Ikea, Tables, Bedframes, Shelving, Playgrounds</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tv"></i>
+        <h3>Wall Mounting</h3>
+        <p>TV Wall Mount, Shelving, Blackboard, Cabinets, Mirrors</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-house-circle-check"></i>
+        <h3>General Maintenance</h3>
+        <p>Drywall repair, Painting, Touch ups, Baseboard, Caulking</p>
       </div>
     </div>
 
     <!-- Testimonials Section -->
 
-    <div class="testimonials">
+    <div class="testimonials swiper">
       <h3>Words of Praise – Straight from Our Fans!</h3>
-      <div class="testimonials-wrap">
-        <div class="testimonial">
+      <div class="swiper-wrapper">
+        <div class="testimonial swiper-slide">
           <div class="col-tes">
             <img
               src="./resources/past-projects/past-project-1.jpeg"
@@ -182,7 +163,7 @@
             <p>Parin Khakar | Scarborough, ON</p>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial swiper-slide">
           <div class="col-tes">
             <img
               src="./resources/past-projects/past-project-2.jpeg"
@@ -199,7 +180,7 @@
             <p>Mahmut Orhan | Markham, ON</p>
           </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial swiper-slide">
           <div class="col-tes">
             <img
               src="./resources/past-projects/past-project-3.jpeg"
@@ -217,10 +198,10 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-slider">
-        <button class="previous"><i class="fas fa-chevron-left"></i></button>
-        <button class="next"><i class="fas fa-chevron-right"></i></button>
-      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <!-- Values Section -->
@@ -303,6 +284,21 @@
     <!-- Footer Section -->
 
     <footer>
+      <div class="mobile-footer">
+        <img src="resources/LocalHandyMan copy.png" alt="LocalHandyMan Logo" />
+        <a class="cta-btn" href="quote.html">
+          <i class="fas fa-chevron-right fa-beat cta-text"></i>Get a quote now
+        </a>
+        <div class="mobile-footer-text">
+          <a href="tel:18008080"
+            ><i class="fas fa-phone"></i>&nbsp;&nbsp;1-800-8080</a
+          >
+          <a href="mailto:info@localhandyman.com"
+            ><i class="fas fa-paper-plane"></i
+            >&nbsp;&nbsp;info@localhandyman.com</a
+          >
+        </div>
+      </div>
       <div class="row">
         <div class="footer-left">
           <img
@@ -354,10 +350,11 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/94bf3e1a89.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
