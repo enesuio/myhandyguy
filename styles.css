@@ -351,6 +351,12 @@ video {
   width: 50%;
 }
 
+.col-tes img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: ;
+}
+
 .col-tes p:has(i) {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -373,12 +379,21 @@ video {
 @media screen and (max-width: 800px) {
   .testimonial {
     flex-direction: column;
+    justify-content: flex-start;
     padding-top: 0rem;
-    gap: 1rem;
+    height: 400px;
   }
 
   .testimonials h3 {
     font-size: 2rem;
+  }
+
+  .swiper-button-prev {
+    margin-left: 1rem;
+  }
+
+  .swiper-button-next {
+    margin-right: 1rem;
   }
 
   .col-tes {
@@ -398,6 +413,12 @@ video {
   .col-tes p:nth-of-type(2) {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .col-tes p:last-of-type {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #777;
   }
 }
 
