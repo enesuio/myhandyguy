@@ -20,14 +20,14 @@
     <nav>
       <div class="nav-toggle"><i class="fas fa-bars"></i></div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu hidden">
         <ul>
-          <li><a href="">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">Previous Projects</a></li>
           <li><a href="">Testimonials</a></li>
           <li><a href="">About Us</a></li>
-          <li><a href="">FAQ</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -39,12 +39,12 @@
 
       <div class="navbar-menu">
         <ul>
-          <li><a href="">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">Previous Projects</a></li>
           <li><a href="">Testimonials</a></li>
           <li><a href="">About Us</a></li>
-          <li><a href="">FAQ</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -57,7 +57,7 @@
     <!-- Hero Section -->
 
     <div class="hero">
-      <video src="resources/hero-background.mp4" autoplay muted loop></video>
+      <video src="resources/hero-bg.mp4" autoplay muted loop></video>
       <div class="hero-text">
         <h1>
           Expert Handyman Services For All Your Needs,
@@ -74,25 +74,38 @@
           <p><i class="fas fa-circle-check"></i>Satisfaction Guarantee</p>
         </div>
         <a href="quote.html">
-          <a class="cta-btn" href="quote.html">
+          <a class="cta-btn bigger-btn" href="quote.html">
             <i class="fas fa-chevron-right fa-beat cta-text"></i>Get a quote now
           </a>
         </a>
       </div>
     </div>
+
+    <div style="width: 80%; margin: 8rem auto">
+      <p style="font-size: 2rem">
+        We are a dedicated handyman service based in downtown Toronto, providing
+        expert solutions for residential homes and commercial properties in the
+        surrounding areas. Whether it's small repairs or larger projects, we're
+        here to help.
+      </p>
+    </div>
+
     <div class="hero-bottom">
       <div class="col">
         <h4>2600+</h4>
         <p>Happy customers</p>
       </div>
+      <div class="divider"></div>
       <div class="col">
         <h4>3100+</h4>
         <p>Completed Projects</p>
       </div>
+      <div class="divider"></div>
       <div class="col">
         <h4>880+</h4>
         <p>TVs Mounted</p>
       </div>
+      <div class="divider"></div>
       <div class="col">
         <h4>33+</h4>
         <p>Businesses Subscribed</p>
@@ -100,12 +113,8 @@
     </div>
 
     <!-- Services Section -->
-
-    <div class="services">
-      <h2>
-        Whatever you need,<br />
-        we have it
-      </h2>
+    <div class="services" id="services">
+      <h2>Whatever you need, we have it</h2>
       <div class="service-card">
         <i class="fas fa-couch"></i>
         <h3>Furniture Assembly</h3>
@@ -140,61 +149,94 @@
 
     <!-- Testimonials Section -->
 
-    <div class="testimonials swiper">
-      <h3>Words of Praise – Straight from Our Fans!</h3>
+    <div class="swiper">
+      <h2>Words of Praise – Straight from Our Fans!</h2>
       <div class="swiper-wrapper">
-        <div class="testimonial swiper-slide">
-          <div class="col-tes">
+        <div class="swiper-slide new-card">
+          <div class="column img">
             <img
-              src="./resources/past-projects/past-project-1.jpeg"
-              alt="A photo showing an assembled IKEA Pax closet"
+              src="./resources/past-projects/past-project4.webp"
+              alt="furniture assembly image"
             />
           </div>
-          <div class="col-tes">
-            <p>
+          <div class="column review">
+            <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i>
-            </p>
-            <p>
-              Enes was prompt, professional, and did an excellent job assembling
-              our Pax closet. I highly recommend him for everyone!
-            </p>
-            <p>Parin Khakar | Scarborough, ON</p>
+            </div>
+            <div class="review-text">
+              Enes is fantastic! I've worked with him several times now, and he
+              consistently delivers. He's punctual, knowledgeable, and
+              incredibly easy to work with. On multiple occasions, he's
+              completed the job faster than expected. I highly recommend working
+              with Enes!
+            </div>
+            <div class="review-name">| Michelle L. Toronto, ON</div>
           </div>
         </div>
-        <div class="testimonial swiper-slide">
-          <div class="col-tes">
-            <img
-              src="./resources/past-projects/past-project-2.jpeg"
-              alt="A photo showing an assembled IKEA Pax closet"
-            />
+        <div class="swiper-slide new-card">
+          <div class="column img">
+            <img src="./resources/past-projects/past-project89.webp" alt="" />
           </div>
-          <div class="col-tes">
-            <p>
+          <div class="column review">
+            <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i>
-            </p>
-            <p>Enes is the best player in the game. Look no further!</p>
-            <p>Mahmut Orhan | Markham, ON</p>
+            </div>
+            <div class="review-text">
+              Enes was such an MVP! Our IKEA BRIMNES bed was taken apart by our
+              movers because it didn’t fit through the door and it also needed
+              repairs. Enes gave excellent guidance on how and where to get the
+              spare (free) hardware so that when he arrived he could efficiently
+              reassemble and repair. I didn’t have assembly instructions—not a
+              problem. He knew the IKEA model so well (having built at least 300
+              units!) he could pin point where the issues were and made our
+              bedframe more secure than before and brought all the right tools
+              to make the repairs needed. Very happy with Enes. Punctual,
+              helpful, skilled, friendly and quick!
+            </div>
+            <div class="review-name">Elenii G. | Toronto, ON</div>
           </div>
         </div>
-        <div class="testimonial swiper-slide">
-          <div class="col-tes">
-            <img
-              src="./resources/past-projects/past-project-3.jpeg"
-              alt="A photo showing an assembled IKEA Pax closet"
-            />
+        <div class="swiper-slide new-card">
+          <div class="column img">
+            <img src="./resources/past-projects/past-project285.webp" alt="" />
           </div>
-          <div class="col-tes">
-            <p>
+          <div class="column review">
+            <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i><i class="fas fa-star"></i
               ><i class="fas fa-star"></i>
-            </p>
-            <p>Pompalamasyon bu da bizim misyon</p>
-            <p>Diyar Pala | Jane and Finch, ON</p>
+            </div>
+            <div class="review-text">
+              Enes was absolutely fantastic to work with. He was able to quickly
+              adjust the layout of my shelving unit after I had mis-measured and
+              ordered incorrect parts. He’s precise, friendly, communicative,
+              and takes the time to do the job exactly as you’d like. Would
+              highly recommend.
+            </div>
+            <div class="review-name">Connie C. | Markham, ON</div>
+          </div>
+        </div>
+        <div class="swiper-slide new-card">
+          <div class="column img">
+            <img src="./resources/past-projects/past-project154.webp" alt="" />
+          </div>
+          <div class="column review">
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <div class="review-text">
+              He was really great - helped assemble a cat tree. Very calm and
+              quiet and nothing was a problem (good when you have skittish
+              pets). Also did one or two other small odd jobs. Very grateful and
+              would recommend!
+            </div>
+            <div class="review-name">Eliza M. | North York, ON</div>
           </div>
         </div>
       </div>
@@ -203,57 +245,179 @@
       <div class="swiper-button-next"></div>
     </div>
 
-    <!-- Values Section -->
-    <div class="values">
-      <h2>Our core values</h2>
-      <div class="values-wrapper">
-        <div class="value">
-          <h4>Trust</h4>
+    <!-- why choose us -->
+
+    <div class="yus" id="yus">
+      <h2>Why We Are Your Best Choice</h2>
+      <div class="yus-wrapper">
+        <div class="yus-card">
+          <i class="fas fa-lightbulb"></i>
+          <h4>Your Vision, Our Craft</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            We take the time to understand your wants and needs, offering
+            customized services to meet your specifics.
           </p>
         </div>
-        <div class="value">
-          <h4>Integrity</h4>
+        <div class="yus-card">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h4>Dedicated Service</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            As a small business, we're able to offer unmatched focus and
+            dedication to each project guaranteeing personal attention from
+            start to finish.
           </p>
         </div>
-        <div class="value">
-          <h4>Security</h4>
+        <div class="yus-card">
+          <i class="fas fa-handshake-angle"></i>
+          <h4>More than just a service</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            We believe in building lasting relationships with you, our clients,
+            making sure you feel valued and supported well beyond the inital
+            project.
           </p>
         </div>
-        <div class="value">
-          <h4>Commitment</h4>
+        <div class="yus-card">
+          <i class="fas fa-phone"></i>
+          <h4>Direct Line to Us</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            When you reach out, you're speaking with the very people who will be
+            working in your project ensuring nothing is lost in translation and
+            every detail is attended to.
           </p>
         </div>
-        <div class="value">
-          <h4>Responsibility</h4>
+        <div class="yus-card">
+          <i class="fas fa-calendar-check"></i>
+          <h4>Flexible and Convenient</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            We work around your schedule, ensuring our services are delivered at
+            time that are most convenient for you, minimizing disruptions to
+            your day.
           </p>
         </div>
-        <div class="value">
-          <h4>Transparency</h4>
+        <div class="yus-card">
+          <i class="fas fa-screwdriver-wrench"></i>
+          <h4>Experienced & Skilled Team</h4>
           <p>
-            Our core values are what differentiates us from the rest of the
-            peasants. So make no mistake and hire us instead of a group of
-            monkeys
+            Our team of professionals has the expertise to handle a wide range
+            of home and business repairs, ensuring quality results every time.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW WE WORK -->
+
+    <div class="hww" id="hww">
+      <h2>Our Simple 3-Step Process</h2>
+      <div class="hww-wrapper">
+        <div class="hww-intro">
+          <h3>It's as easy as it gets</h3>
+          <p>
+            From the moment you reach out to the final touches, our streamlined
+            process ensures your project is handled efficiently and with care.
+            Here's how it works:
+          </p>
+        </div>
+        <div class="hww-card">
+          <h4>1. Request A Quote</h4>
+          <p>
+            It all starts with you reaching out! Use our simple form to tell us
+            about your project, upload any photos, and provide your preferred
+            timing. We’ll review your details and get back to you promptly with
+            a personalized quote.
+          </p>
+        </div>
+        <div class="hww-card">
+          <h4>2. Confirm & Schedule</h4>
+          <p>
+            Once you’re happy with the quote, we’ll finalize the details and
+            schedule the work at a time that’s convenient for you. We ensure
+            clear communication every step of the way to make sure everything
+            aligns with your needs.
+          </p>
+        </div>
+        <div class="hww-card">
+          <h4>3. Sit Back & Relax</h4>
+          <p>
+            On the day of the project, our team arrives on time, fully prepared.
+            We handle the job with care and professionalism, leaving your space
+            clean and tidy. You get to enjoy the results with no hassle!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+
+    <div class="faq" id="faq">
+      <h2>FAQs</h2>
+      <h3>Got questions? We've got answers</h3>
+      <div class="faq-wrapper">
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>What types of services do you offer?</h4>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We provide a wide range of handyman services, including home
+              repairs, furniture assembly, plumbing, electrical work, painting,
+              drywall repair, and more. Whether it's a small fix or a larger
+              project, we've got you covered.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>How do I schedule a service?</h4>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              You can easily schedule a service by calling us directly, sending
+              an email, or using our online booking system. We'll work with you
+              to find a convenient time that fits your schedule.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>Do you offer free estimates?</h4>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we provide free estimates for all our services. Simply
+              contact us with the details of your project, and we’ll give you a
+              quote based on the scope of work.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>What types of services do you offer?</h4>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We provide a wide range of handyman services, including home
+              repairs, furniture assembly, plumbing, electrical work, painting,
+              drywall repair, and more. Whether it's a small fix or a larger
+              project, we've got you covered.
+            </p>
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-question">
+            <h4>Are you licensed and insured?</h4>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Absolutely. We are fully licensed and insured, ensuring that both
+              you and our team are protected during any job we undertake.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -279,6 +443,8 @@
         <p><i class="fas fa-envelope"></i> info@localhandyman.com</p>
       </div>
     </div>
+
+    <!-- reviews experimental section -->
 
     <!-- Footer Section -->
 
