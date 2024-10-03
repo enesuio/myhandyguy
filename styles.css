@@ -58,14 +58,11 @@ nav {
 
 .logo {
   height: 100%;
+  align-content: center;
 }
 
-.logo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+.logo img {
+  height: 80%;
 }
 
 .navbar-menu ul {

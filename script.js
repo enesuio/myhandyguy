@@ -90,9 +90,9 @@ const loadImages = (swiperColumn, imageCount, imagePath, imageName, imageType) =
   swiperColumn.innerHTML += columnContent;
 };
 
-loadImages(scrollingColumn1, 60, "/resources/past-projects/", "past-projects", "webp");
-loadImages(scrollingColumn2, 60, "/resources/past-projects/", "past-projects", "webp");
-loadImages(scrollingColumn3, 60, "/resources/past-projects/", "past-projects", "webp");
+loadImages(scrollingColumn1, 60, "/resources/past-projects/", "past-project", "webp");
+loadImages(scrollingColumn2, 60, "/resources/past-projects/", "past-project", "webp");
+loadImages(scrollingColumn3, 60, "/resources/past-projects/", "past-project", "webp");
 
 
 gsap.to(".scrolling-column1", {
