@@ -1,9 +1,12 @@
 // Mobile Menu 
 const mobileBtn = document.querySelector(".nav-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenuIcon = document.querySelector(".fas.fa-bars");
 
 mobileBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("active");
+  mobileMenuIcon.className = "fas fa-xmark" === mobileMenuIcon.className ? "fas fa-bars" : "fas fa-xmark";
+  document.body.classList.toggle("noscroll");
 });
 
 // Slider Testimonials

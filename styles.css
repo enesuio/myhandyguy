@@ -6,7 +6,7 @@
   --secondary-color: #6fc5dd;
   /* --accent-color: hsl(20, 100%, 50%); */
   --accent-color: #6446d3;
-  --section-margin: 8rem auto;
+  --section-margin: 6rem auto;
 }
 
 * {
@@ -27,6 +27,10 @@
   margin-right: 0.5rem;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 h2 {
   font-size: 2.5rem;
   text-align: center;
@@ -40,10 +44,6 @@ img {
 
 button {
   all: unset;
-}
-
-.hidden {
-  display: none !important;
 }
 
 nav {
@@ -112,10 +112,6 @@ nav {
 
 /* CTA button styles */
 
-.mobile-button {
-  z-index: 110;
-}
-
 .cta-btn {
   padding: 10px 15px;
   background-color: var(--accent-color);
@@ -141,7 +137,7 @@ nav {
 /* Mobile burger menu */
 .nav-toggle {
   display: none;
-  z-index: 100;
+  z-index: 110;
   font-size: 2rem;
 }
 
@@ -168,11 +164,18 @@ nav {
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0%;
+  left: -100%;
   background-color: #0a6397;
   display: flex;
   justify-content: center;
+  transition: left 0.3s ease-in-out;
+  z-index: 100;
 }
+
+.mobile-menu.active {
+  left: 0;
+}
+
 
 .mobile-menu ul {
   list-style: none;
@@ -187,6 +190,13 @@ nav {
 .mobile-menu a {
   color: #82be62;
   font-size: 1.2rem;
+}
+
+/* Mobile Menu Animation */
+
+@keyframes slide {
+  left: 0;
+
 }
 
 /* Hero Section */
@@ -256,7 +266,6 @@ video {
   background-color: var(--primary-color);
   width: 100%;
   padding: 3rem 5vw;
-  z-index: 5;
   margin: var(--section-margin);
   text-align: center;
   display: grid;
@@ -618,7 +627,6 @@ video {
 }
 
 .hww-card {
-  /* border-left: 10px solid lightblue; */
   border-left: 10px solid var(--secondary-color);
   padding-left: 1rem;
 }
