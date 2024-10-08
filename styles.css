@@ -1,7 +1,11 @@
 :root {
-  --primary-color: #efe87c;
-  --secondary-color: hsl(260, 100%, 83%);
-  --accent-color: hsl(20, 100%, 50%);
+  /* --primary-color: #efe87c; */
+  /* --primary-color: #ebd9ad; */
+  --primary-color: hsl(43, 31%, 80%)  ;
+  /* --secondary-color: hsl(260, 100%, 83%); */
+  --secondary-color: #6fc5dd;
+  /* --accent-color: hsl(20, 100%, 50%); */
+  --accent-color: #6446d3;
   --section-margin: 8rem auto;
 }
 
@@ -99,6 +103,11 @@ nav {
 
 .navbar-menu a:hover::after {
   display: block;
+}
+
+.nav-phone {
+  margin-right: 1rem;
+  color: lightseagreen;
 }
 
 /* CTA button styles */
@@ -255,6 +264,7 @@ video {
   align-items: center;
   justify-items: center;
   gap: 3rem;
+  color: #eee;
 }
 
 .hero-bottom .divider {
@@ -369,6 +379,10 @@ video {
   background-color: var(--primary-color);
 }
 
+.swiper h2 {
+  color: #eee;
+}
+
 .new-card {
   width: 80%;
   height: 500px;
@@ -415,6 +429,29 @@ video {
   font-size: 1rem;
   color: #448;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #eee;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #eee;
+
+}
+
+.swiper-button-next {
+  margin-right: 2rem;
+}
+
+.swiper-button-prev {
+  margin-left: 2rem;
+}
+
+.swiper-pagination {
+  margin-bottom: 1rem;
+}
+
+
 
 @media screen and (max-width: 1300px) {
   .new-card {
@@ -487,6 +524,10 @@ video {
   text-align: center;
   font-size: 3rem;
   padding: 2rem;
+}
+
+.yus-card i {
+  color: var(--accent-color);
 }
 
 /* Some Black Magic */
@@ -577,7 +618,8 @@ video {
 }
 
 .hww-card {
-  border-left: 10px solid lightblue;
+  /* border-left: 10px solid lightblue; */
+  border-left: 10px solid var(--secondary-color);
   padding-left: 1rem;
 }
 
@@ -622,7 +664,8 @@ video {
 
 .faq-card {
   margin: 2rem 0;
-  background-color: rgba(255, 160, 122, 0.3);
+  /* background-color: rgba(255, 160, 122, 0.3); */
+  background-color: var(--primary-color);
   padding: 3rem;
   border-radius: 20px;
 }
@@ -636,11 +679,6 @@ video {
 
 .faq-question i {
   font-size: 2rem;
-}
-
-@media screen and (max-width: 800px) {
-  .faq-question i {
-  }
 }
 
 .faq-answer {
@@ -725,6 +763,10 @@ footer .row {
   justify-content: space-between;
   margin: auto;
   margin-bottom: 4rem;
+}
+
+.footer-left img {
+  margin-bottom: 2rem;
 }
 
 .cta-text {
@@ -941,4 +983,26 @@ footer button:hover {
   height: auto;
   object-fit: cover;
   border-radius: 30px;
+}
+
+
+/* -------------------------------------------------------------------------------
+-------------------------------------PRIVACY PAGE---------------------------------
+------------------------------------------------------------------------------- */
+
+.privacy-container {
+  max-width: 1100px;
+  margin: 4rem auto;
+}
+
+.privacy-container h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.privacy-container h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
