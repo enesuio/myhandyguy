@@ -761,16 +761,12 @@ footer {
   margin: 2rem auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
 
 .footer-main > a {
   max-width: 400px;
-}
-
-.footer-main img {
-  margin-bottom: 2rem;
-  max-height: 100%;
 }
 
 .email-cta-title {
@@ -883,6 +879,10 @@ footer button:hover {
   gap: 2rem;
 }
 
+.mobile-footer a img{
+  
+  
+}
 .mobile-footer .cta-btn {
   padding: 10px 15px;
   background-color: white;
@@ -918,6 +918,19 @@ footer button:hover {
   .footer-links {
     display: none;
   }
+
+  .email-cta {
+    width: 60%;
+  }
+
+  .email-cta form input {
+    font-size: 1rem;
+  }
+
+  .email-cta form button {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -938,7 +951,7 @@ footer button:hover {
     display: flex;
   }
   .mobile-footer img {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -950,7 +963,7 @@ footer button:hover {
   }
 
   .mobile-footer img {
-    width: 90%;
+    width: 100%;
   }
 }
 

@@ -44,8 +44,6 @@ mobileBtn.addEventListener("click", () => {
     faqCard.addEventListener("mouseover", () => {
       faqCard.lastElementChild.style.display = "block";
       faqCard.firstElementChild.lastElementChild.classList.add("fa-flip-vertical");
-
-
     });
 
     faqCard.addEventListener("mouseout", () => {
