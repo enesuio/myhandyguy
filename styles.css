@@ -157,6 +157,24 @@ nav {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .navbar-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-cta a {
+    font-size: 0.7rem;
+  }
+
+  .navbar-cta .cta-btn {
+    padding: 5px 6px;
+  }
+}
+
 /* Mobile Menu */
 
 .mobile-menu {
