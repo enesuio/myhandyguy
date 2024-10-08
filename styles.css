@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-.fas {
+.fas, .fab{
   margin-right: 0.5rem;
 }
 
@@ -754,30 +754,51 @@ footer {
   padding: clamp(1rem, 5vw, 4rem);
   background: #141414;
   color: #eee;
-  overflow: hidden;
 }
 
-footer .row {
+.footer-main {
   width: 90%;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  margin-bottom: 4rem;
+  gap: 2rem;
 }
 
-.footer-left img {
+.footer-main > a {
+  max-width: 400px;
+}
+
+.footer-main img {
   margin-bottom: 2rem;
+  max-height: 100%;
 }
 
-.cta-text {
-  font-size: 1.2rem;
+.email-cta-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.email-cta-subtext {
+  font-size: 1rem;
+  max-width: 70ch;
+
 }
 
 footer form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0 0.5rem 0;
+  margin: 1rem 0 0.5rem;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+footer form:focus-within{
+  box-shadow: 0px 0px 20px 4px #7b64cd;
 }
 
 footer input {
@@ -785,21 +806,28 @@ footer input {
   padding-left: 1rem;
   font-weight: 500;
   font-size: 1.2rem;
-  flex: 0 0 65%;
+  background-color: #eee;
+  border: none;
+  width: 100%;
+}
+
+footer input:focus {
+  outline: none;
 }
 
 footer button {
+  position: absolute;
+  right: 0;
   height: 3rem;
   border-radius: 5px;
   text-align: center;
-  background-color: #333;
-  border: 1px solid #fff;
+  background-color: var(--accent-color);
   color: #fff;
-  font-size: 1.5rem;
-  flex: 0 0 25%;
+  font-size: 1.2rem;
+  padding: 0 1rem;
 }
 
-.subs-text {
+.email-cta-privacy {
   font-size: 0.7rem;
   color: #aaa;
 }
@@ -810,23 +838,17 @@ footer button:hover {
   cursor: pointer;
 }
 
-.footer-right {
-  display: flex;
-  justify-content: end;
-  gap: 4rem;
-  width: 100%;
-}
-
-.footer-right h4 {
+.footer-links h4 {
   font-size: 1.5rem;
 }
 
-.footer-right a {
+.footer-links a {
   color: white;
   display: block;
   margin-top: 1.2rem;
   text-decoration: none;
   font-size: 1rem;
+  white-space: nowrap;
 }
 
 .divider-bar {
@@ -893,7 +915,7 @@ footer button:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .footer-links:last-of-type {
+  .footer-links {
     display: none;
   }
 }
@@ -909,7 +931,7 @@ footer button:hover {
 }
 
 @media screen and (max-width: 870px) {
-  footer .row {
+  .footer-main {
     display: none;
   }
   .mobile-footer {
@@ -990,19 +1012,19 @@ footer button:hover {
 -------------------------------------PRIVACY PAGE---------------------------------
 ------------------------------------------------------------------------------- */
 
-.privacy-container {
+.legal-container {
   max-width: 1100px;
   margin: 4rem auto;
 }
 
-.privacy-container h1 {
+.legal-container h1 {
   font-size: 3.5rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 3rem;
 }
 
-.privacy-container h2 {
+.legal-container h2 {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
