@@ -236,6 +236,11 @@ video {
   filter: brightness(0.9) blur(4px);
 }
 
+.hero-stars{
+  all: unset;
+  white-space: nowrap;
+}
+
 .hero-text {
   position: absolute;
   width: 50%;
@@ -323,6 +328,10 @@ video {
 
   .hero video {
     display: none;
+  }
+
+  .hero-stars {
+    font-size: 0.7rem;
   }
 
   .hero-text {
