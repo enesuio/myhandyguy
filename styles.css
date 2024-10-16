@@ -1,7 +1,9 @@
 :root {
-  --primary-color: hsl(43, 31%, 80%)  ;
-  --secondary-color: #6fc5dd;
-  --accent-color: #6446d3;
+  --primary-color: hsl(248, 66%, 41%);
+  --primary-color: hsl(248, 47%, 76%);
+  --secondary-bg: hsl(248, 47%, 76%);
+  --secondary-color: hsl(248, 66%, 41%);
+  --accent-color: hsl(6, 100%, 40%);
   --section-margin: 6rem auto;
 }
 
@@ -19,7 +21,8 @@
   margin: 0;
 }
 
-.fas, .fab{
+.fas,
+.fab {
   margin-right: 0.5rem;
 }
 
@@ -114,11 +117,9 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
-  
   .logo img {
     width: 100px;
   }
-  
 }
 
 /* CTA button styles */
@@ -196,7 +197,7 @@ nav {
   top: 0;
   left: -100%;
   background-color: var(--primary-color);
-  
+
   display: flex;
   justify-content: center;
   transition: left 0.3s ease-in-out;
@@ -288,7 +289,7 @@ video {
   filter: brightness(0.9) blur(4px);
 }
 
-#hero-stars{
+#hero-stars {
   all: unset;
   white-space: nowrap;
   font-size: clamp(1vw, 1rem, 2.5vw);
@@ -469,7 +470,6 @@ video {
   .service-card {
     width: 150px;
   }
-  
 }
 
 /* Testimonials Section */
@@ -479,7 +479,7 @@ video {
   padding: 4rem;
   padding-bottom: 6rem;
   margin: var(--section-margin);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-bg);
 }
 
 .swiper h2 {
@@ -537,9 +537,9 @@ video {
   background-color: #eee;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: #eee;
-
 }
 
 .swiper-button-next {
@@ -879,7 +879,6 @@ footer {
 .email-cta-subtext {
   font-size: 1rem;
   max-width: 70ch;
-
 }
 
 footer form {
@@ -893,7 +892,7 @@ footer form {
   position: relative;
 }
 
-footer form:focus-within{
+footer form:focus-within {
   box-shadow: 0px 0px 20px 4px #7b64cd;
 }
 
@@ -979,9 +978,7 @@ footer button:hover {
   gap: 2rem;
 }
 
-.mobile-footer a img{
-  
-  
+.mobile-footer a img {
 }
 .mobile-footer .cta-btn {
   padding: 10px 15px;
@@ -1119,7 +1116,6 @@ footer button:hover {
   object-fit: cover;
   border-radius: 30px;
 }
-
 
 /* -------------------------------------------------------------------------------
 -------------------------------------LEGAL PAGES----------------------------------
