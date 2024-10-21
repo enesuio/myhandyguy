@@ -1055,7 +1055,7 @@ footer button:hover {
 @media screen and (max-width: 550px) {
   .footer-legal {
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
