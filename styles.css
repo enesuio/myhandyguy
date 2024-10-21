@@ -700,9 +700,13 @@ video {
 
 /* HOW WE WORK */
 
+.hww {
+  margin: var(--section-margin);
+}
+
 .hww-wrapper {
   width: 70%;
-  margin: var(--section-margin);
+  margin-inline: auto;
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -711,7 +715,7 @@ video {
 }
 
 .hww-intro {
-  grid-row: span 6;
+  grid-row: span 3;
 }
 
 .hww-intro p {
