@@ -143,7 +143,7 @@ nav {
 }
 
 .overlay-cta-bottom {
-  display: block;
+  display: none;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -159,6 +159,7 @@ nav {
   font-size: 2rem;
   font-weight: 700;
 }
+
 /* CTA button styles */
 
 .cta-btn {
@@ -216,6 +217,10 @@ nav {
 
   .overlay-cta {
     display: none;
+  }
+
+  .overlay-cta-bottom {
+    display: block;
   }
 }
 
