@@ -152,11 +152,12 @@ nav {
   border-radius: 5px;
   text-align: center;
   z-index: 10;
+  margin: 0;
 }
 
 .overlay-cta-bottom a {
   color: #fcfccc;
-  font-size: 2rem;
+  font-size:1.5rem;
   font-weight: 700;
 }
 
@@ -220,7 +221,8 @@ nav {
   }
 
   .overlay-cta-bottom {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -260,14 +262,15 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.2rem;
   text-align: left;
 }
 
 .mobile-menu a {
-  color: var(--accent-color);
+  color: #eee;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
+  font-weight: 700;
 }
 
 .mobile-menu a:hover {
