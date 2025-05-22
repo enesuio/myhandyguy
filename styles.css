@@ -122,6 +122,43 @@ nav {
   }
 }
 
+/* Overlay CTA button */
+
+.overlay-cta {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #d36c27;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay-cta a {
+  color: #fcfccc;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.overlay-cta-bottom {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #d36c27;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay-cta-bottom a {
+  color: #fcfccc;
+  font-size: 2rem;
+  font-weight: 700;
+}
 /* CTA button styles */
 
 .cta-btn {
@@ -175,6 +212,10 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .overlay-cta {
+    display: none;
   }
 }
 
@@ -236,6 +277,7 @@ nav {
   height: 50px;
   border-radius: 0 0 20px 20px;
   overflow: hidden;
+  z-index: 10;
 }
 
 .mobile-nav-extension a {
@@ -259,6 +301,7 @@ nav {
 
   .mobile-nav-extension {
     display: flex;
+    position: fixed;
   }
 }
 
